@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.diamo.iturn.GameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            tools:ignore="Logo image"
+            android:id="@+id/logo"
+            app:srcCompat="@mipmap/iturnlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id= "@+id/playBtn"
+            android:text="@string/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/scoreOnBoard"
+            android:layout_toEndOf="@+id/scoreOnBoard" />
+
+        <Button
+            android:id= "@+id/rules"
+            android:text="@string/rulz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:layout_alignBaseline="@+id/settings"
+            android:layout_alignBottom="@+id/settings"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id= "@+id/settings"
+            android:text="@string/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:layout_above="@+id/retryBtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id= "@+id/shop"
+            android:text="@string/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:layout_alignBaseline="@+id/playBtn"
+            android:layout_alignBottom="@+id/playBtn"
+            android:layout_toLeftOf="@+id/scoreOnBoard"
+            android:layout_toStartOf="@+id/scoreOnBoard" />
+
+        <TextView
+            android:id="@+id/highScoreStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:textAlignment="center"
+            android:textColor="@color/colorDarkSunset"
+            android:textSize="50sp"
+            tools:ignore="HighScore number"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/pillartop"
+            android:id="@+id/pillarTop1"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/pillartop"
+            android:id="@+id/pillarTop2"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/pillartop"
+            android:id="@+id/pillarTop3"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/pillartop"
+            android:id="@+id/pillarTop4"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/pillartop"
+            android:id="@+id/pillarTop5"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/pillartop"
+            android:id="@+id/pillarTop6"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar17"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar16"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar15"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar14"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar13"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar12"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar11"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar10"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar9"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar8"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar7"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar6"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar5"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar4"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar3"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar2"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+        <ImageView
+            tools:ignore="Cube image"
+            android:layout_width="79dp"
+            android:layout_height="142dp"
+            app:srcCompat="@mipmap/pillar"
+            android:id="@+id/Pillar1"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
+
+
+        <ImageView
+            tools:ignore="Ball"
+            android:layout_width="23dp"
+            android:layout_height="26dp"
+            app:srcCompat="@mipmap/ball"
+            android:id="@+id/ball"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id= "@+id/retryBtn"
+            android:text="RETRY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/playBtn"
+            android:layout_alignLeft="@+id/playBtn"
+            android:layout_alignStart="@+id/playBtn" />
+
+        <ImageView
+            tools:ignore="Game Over text"
+            android:id="@+id/GameOver"
+            app:srcCompat="@mipmap/gameover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ball"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            tools:ignore="Score image"
+            android:id="@+id/scoreBoard"
+            app:srcCompat="@mipmap/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="29dp" />
+
+        <TextView
+            tools:ignore="Score on Board"
+            android:id="@+id/scoreOnBoard"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/scoreBoard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            tools:ignore="HighScore On Board"
+            android:id="@+id/highScoreOnBoard"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/scoreBoard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            tools:ignore="Score in Game"
+            android:id="@+id/scoreInGame"
+            android:textSize="30sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/highScoreStart"
+            android:layout_alignStart="@+id/highScoreStart" />
+
+        <ImageView
+            tools:ignore="HighScore start image"
+            android:id="@+id/highScoreStartImg"
+            app:srcCompat="@mipmap/highscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/highScoreOnBoard"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/talisman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="37dp" />
+
+        <ImageView
+            tools:ignore="Ball"
+            android:layout_width="23dp"
+            android:layout_height="26dp"
+            app:srcCompat="@mipmap/blueball"
+            android:id="@+id/blueBall"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"/>
+        <ImageView
+            tools:ignore="Ball"
+            android:layout_width="23dp"
+            android:layout_height="26dp"
+            app:srcCompat="@mipmap/greenball"
+            android:id="@+id/greenBall"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible"/>
+
+        <ImageView
+            tools:ignore="Ball"
+            android:layout_width="23dp"
+            android:layout_height="26dp"
+            app:srcCompat="@mipmap/roseball"
+            android:id="@+id/roseBall"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/dino"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="96dp"
+            app:srcCompat="@mipmap/dino"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

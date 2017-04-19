@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ITurn</string>
+    <string name="title_activity_rules">RulesActivity</string>
+    <string name="score">Your score:</string>
+    <string name="rules">This is iTurn game. For changing direction of your ball just simply tap on the screen.
+        Try setting your personal records and once you have set your record to 50 points, visit the Shop and buy new ball.</string>
+    <string name="showCalender">Show Calender</string>
+    <string name="caution">NB: If you are playing many days in a row, check calender, please, your relatives may be missing you.</string>
+    <string name="backToRules">Back to Rules</string>
+    <string name="Buy">Buy</string>
+    <string name="NiceBuy">Nice Purchase!</string>
+    <string name="BuySmth">Buy Something!</string>
+    <string name="music">MUSIC</string>
+    <string name="shop">SHOP</string>
+    <string name="zero">0</string>
+    <string name="rulz">RULES</string>
+    <string name="play">PLAY</string>
+    <string name="backToGame">Back to Game</string>
+    <string name="price1">price: 50</string>
+    <string name="price2">price: 100</string>
+    <string name="price3">price: 200</string>
+
+</resources>
